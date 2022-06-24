@@ -4,5 +4,5 @@ import 'package:dart_application_1/dart_application_1.dart'
 void main(List<String> arguments) {
   // print('Hello world: ${dart_application_1.calculate()}!');
   // print(10 % 2);
-  dart_application_1.evaporator(10, 10, 5);
+  dart_application_1.otherAngle(60, 60);
 }

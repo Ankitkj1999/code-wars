@@ -1,9 +1,8 @@
-int area_or_perimeter(int l, int w) {
-  if (l == w) {
-    print('The area is ${l * w}');
-    return l * w;
-  } else {
-    print('The perimeter is ${2 * (l + w)}');
-    return 2 * (l + w);
+int summation(int n) {
+  int sum = 0;
+  for (int i = 0; i <= n; i++) {
+    sum += i;
   }
+  print(sum);
+  return sum;
 }

@@ -1,8 +1,4 @@
-int summation(int n) {
-  int sum = 0;
-  for (int i = 0; i <= n; i++) {
-    sum += i;
-  }
-  print(sum);
-  return sum;
+int goals(int laLigaGoals, int copaDelReyGoals, int championsLeagueGoals) {
+  print(laLigaGoals + copaDelReyGoals + championsLeagueGoals);
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }

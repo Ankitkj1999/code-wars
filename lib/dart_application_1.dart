@@ -1,19 +1,14 @@
-String well(List<String> x) {
-  int goodCount = 0;
+import 'dart:math';
 
-  for (int i = 0; i <= x.length - 1; i++) {
-    if (x[i] == 'good') {
-      goodCount++;
-    }
+int binToDec(bin) {
+  dynamic decimal = 0.0;
+  var exponent = bin.length - 1;
+  for (int i = 0; i <= (bin.length - 1); i++) {
+    var currentNum = int.parse(bin[i]);
+
+    decimal += currentNum * pow(2, exponent);
+    exponent--;
   }
-  if (goodCount > 0 && goodCount <= 2) {
-    print('Publish!');
-    return 'Publish!';
-  } else if (goodCount > 2) {
-    print('I smell a series!');
-    return 'I smell a series!';
-  } else {
-    print('Fail!');
-    return 'Fail!';
-  }
+  print('Decimal $decimal');
+  return decimal;
 }

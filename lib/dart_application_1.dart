@@ -1,13 +1,8 @@
-String apple(dynamic a) {
-  var b = a.toString();
-  var x = num.parse(b);
-
-  print(x);
-  if (x * x > 1000) {
-    print('It\'s hotter than the sun!!');
-    return 'It\'s hotter than the sun!!';
-  } else {
-    print('Help yourself to a honeycomb Yorkie for the glovebox.');
-    return 'Help yourself to a honeycomb Yorkie for the glovebox.';
+List maps(List<int> arr) {
+  List newList = List.filled((arr.length), int, growable: false);
+  for (int i = 0; i <= (arr.length - 1); i++) {
+    newList[i] = arr[i] * 2;
   }
+  print(newList);
+  return newList;
 }

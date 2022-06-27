@@ -1,13 +1,13 @@
-int nthEven(int n) {
-//   int count = 0;
-//   int even_no = 0;
-//   for (int i = 0; count < n; i++) {
-//     if (i % 2 == 0) {
-//       even_no = i;
-//       count += 1;
-
-//     }
-//   }
-//   return even_no;
-  return ((n * 2) - 2);
+int findDifference(List<int> a, List<int> b) {
+  // var oneVolume = a[0] * a[1] * a[2];
+  // var twoVolume = b[0] * b[1] * b[2];
+  // print('$oneVolume - $twoVolume');
+  // var difference = oneVolume - twoVolume;
+  // if (difference.isNegative == true) {
+  //   difference = -difference;
+  // }
+  // print(difference);
+  // return difference;
+  var diff = (a[0] * a[1] * a[2]) - (b[0] * b[1] * b[2]);
+  return (diff.abs());
 }

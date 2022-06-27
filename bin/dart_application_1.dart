@@ -4,5 +4,5 @@ import 'package:dart_application_1/dart_application_1.dart'
 void main(List<String> arguments) {
   // print('Hello world: ${dart_application_1.calculate()}!');
   // print(10 % 2);
-  dart_application_1.firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]);
+  dart_application_1.seatsInTheater(16, 11, 5, 3);
 }

@@ -1,8 +1,8 @@
-List maps(List<int> arr) {
-  List newList = List.filled((arr.length), int, growable: false);
+int grow(List<int> arr) {
+  var mul = 1;
   for (int i = 0; i <= (arr.length - 1); i++) {
-    newList[i] = arr[i] * 2;
+    mul = arr[i] * mul;
   }
-  print(newList);
-  return newList;
+  print(mul);
+  return mul;
 }

@@ -4,5 +4,5 @@ import 'package:dart_application_1/dart_application_1.dart'
 void main(List<String> arguments) {
   // print('Hello world: ${dart_application_1.calculate()}!');
   // print(10 % 2);
-  dart_application_1.seatsInTheater(16, 11, 5, 3);
+  dart_application_1.updateLight('green');
 }

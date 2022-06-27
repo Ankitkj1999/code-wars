@@ -1,8 +1,19 @@
-int grow(List<int> arr) {
-  var mul = 1;
-  for (int i = 0; i <= (arr.length - 1); i++) {
-    mul = arr[i] * mul;
+String well(List<String> x) {
+  int goodCount = 0;
+
+  for (int i = 0; i <= x.length - 1; i++) {
+    if (x[i] == 'good') {
+      goodCount++;
+    }
   }
-  print(mul);
-  return mul;
+  if (goodCount > 0 && goodCount <= 2) {
+    print('Publish!');
+    return 'Publish!';
+  } else if (goodCount > 2) {
+    print('I smell a series!');
+    return 'I smell a series!';
+  } else {
+    print('Fail!');
+    return 'Fail!';
+  }
 }

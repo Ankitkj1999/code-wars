@@ -4,5 +4,5 @@ import 'package:dart_application_1/dart_application_1.dart'
 void main(List<String> arguments) {
   // print('Hello world: ${dart_application_1.calculate()}!');
   // print(10 % 2);
-  dart_application_1.repeatString(5, 'Hello');
+  dart_application_1.positiveSum([1, -4, 7, 12]);
 }

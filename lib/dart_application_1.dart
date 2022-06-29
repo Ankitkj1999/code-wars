@@ -1,7 +1,9 @@
-String repeatString(int n, String s) {
-  String solution = '';
-  for (int i = 1; i <= n; i++) {
-    solution += s;
+int positiveSum(List<int> arr) {
+  var sum = 0;
+  for (int i = 0; i <= arr.length - 1; i++) {
+    if (arr[i].isNegative != true) {
+      sum += arr[i];
+    }
   }
-  return solution;
+  return sum;
 }

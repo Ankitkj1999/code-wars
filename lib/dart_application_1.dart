@@ -1,9 +1,13 @@
-int positiveSum(List<int> arr) {
-  var sum = 0;
-  for (int i = 0; i <= arr.length - 1; i++) {
-    if (arr[i].isNegative != true) {
-      sum += arr[i];
+int stairsIn20(List<List<int>> arr) {
+  // stairsClimed = arr[i][j];
+
+  dynamic stairsClimed = 0;
+
+  for (int i = 0; i <= 6; i++) {
+    for (int j = 0; j <= (arr[i].length - 1); j++) {
+      stairsClimed = stairsClimed + arr[i][j];
     }
   }
-  return sum;
+  print(stairsClimed * 20);
+  return stairsClimed * 20;
 }

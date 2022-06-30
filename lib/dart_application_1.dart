@@ -1,13 +1,6 @@
-int stairsIn20(List<List<int>> arr) {
-  // stairsClimed = arr[i][j];
+// List<int> monkeyCount(int n) => [for (var i = 1; i <= n; i++) i];
 
-  dynamic stairsClimed = 0;
-
-  for (int i = 0; i <= 6; i++) {
-    for (int j = 0; j <= (arr[i].length - 1); j++) {
-      stairsClimed = stairsClimed + arr[i][j];
-    }
-  }
-  print(stairsClimed * 20);
-  return stairsClimed * 20;
+// function to count the number of monkies
+List<int> mokeyCount(int n) {
+  return List.generate(n, (int i) => i + 1);
 }

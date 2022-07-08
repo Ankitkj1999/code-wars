@@ -105,51 +105,29 @@ String subtractSum(int n) {
     'pineapple',
   ];
 
-//   if (n <= 100) {
-
-//  for (int j = 0; j <= newNumber.length - 1; j++) {
-//     sumOfDigits += int.parse(newNumber[j]);
-//     print(sumOfDigits);
-//     currentNumber = n - sumOfDigits;
-//   }
-
-//   }
-  // print(listOfFruits[3]);
-
-  // do {
   for (int i = 0; i <= newNumber.length - 1; i++) {
     sumOfDigits += int.parse(newNumber[i]);
-    // print('Sum of digit: $sumOfDigits');
-    // print('Value of n: $n');
+
     currentNumber = n - sumOfDigits;
-    // print('Current number: $currentNumber');
   }
-  // } while (currentNumber < 100 && currentNumber >= 0);
   print('Value of n: $n');
   print('Sum of digit: $sumOfDigits');
   print('Current number: $currentNumber');
 
   if (currentNumber != 100 && currentNumber > 100) {
-    // print('Number is greater than 100');
-    // print(currentNumber - 1);
     while (currentNumber > 100) {
       print('|');
 
       String newNumberInLoop = currentNumber.toString();
       int sumOfDigitsInLoop = 0;
 
-      // print('Inide while loop');
       for (int j = 0; j <= newNumberInLoop.length - 1; j++) {
-        // print('Inside while and for loop');
         sumOfDigitsInLoop += int.parse(newNumberInLoop[j]);
       }
-      // print('Value of n: $n');
       currentNumber -= sumOfDigitsInLoop;
 
       print('Sum of digit here: $sumOfDigitsInLoop');
       print('Current number: $currentNumber');
-
-      // print(listOfFruits[currentNumber - 1]);
     }
     print(listOfFruits[currentNumber - 1]);
   } else {

@@ -1,4 +1,4 @@
-import '/home/ankit/Documents/code-wars/lib/42_substract_the_sum.dart'
+import '/home/ankit/Documents/code_wars/lib/42_substract_the_sum.dart'
     as dart_application_1;
 
 void main(List<String> arguments) {
